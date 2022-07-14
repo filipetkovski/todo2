@@ -1,0 +1,85 @@
+nav {
+    padding-top: 10px;
+    position: fixed;
+    top: 71px;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid gray;
+
+    background-color: #e7e7e7;
+
+    z-index: 100;
+}
+
+nav span {
+    font-size: 0;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.rest-buttons {
+    margin-top: 15px;
+    border-top: 1px dotted gray;
+    width: 95%;
+    height: 5%;
+}
+
+nav button {
+    padding: 7px 20px;
+    font-size: 1em;
+    border: 0;
+    width: 98%;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.navImg {
+    width: 15px;
+}
+
+nav button:last-of-type {
+    font-size: 1.5em;
+}
+
+#span5 {
+    font-size: 0.8em;
+    font-size: 0;
+}
+
+nav button:last-of-type:hover{
+    background-color: firebrick;
+}
+
+nav button:hover {
+    background-color: #969696;
+    color: white;
+}
+
+.nav-button2, .nav-button4, .nav-button1, .nav-button3  {
+    padding-left: 22px;
+}
+
+@media  (max-width: 450px) {
+    nav button {
+        font-weight: bold;
+    }
+
+    nav button:hover {
+        background-color: transparent;
+        color: black;
+    }
+}

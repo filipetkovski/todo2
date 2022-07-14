@@ -1,0 +1,47 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+button {
+    touch-action: manipulation;
+}
+
+#none h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#none {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    background-color: white;
+    z-index: 10000;
+}
+
+#none input {
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+#none button {
+    padding: 10px 20px;
+    border: none;
+    background-color: firebrick;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#none button:hover {
+    background-color: darkred;
+}

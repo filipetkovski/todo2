@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial.scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/general.css">
+    <link rel="stylesheet" href="Css/nav.css">
+    <link rel="stylesheet" href="Css/section.css">
+    <link rel="stylesheet" href="Css/side.css">
+
+    <script src="JavaScript/js.js"></script>
+    <script src="JavaScript/nicknameCopy.js"></script>
+    <script src="JavaScript/todoJS.js"></script>
+</head>
+<body>
+<div id="none">
+    <h3>Filip's ToDo List</h3>
+    <input id="nickname1" type="text" placeholder="Enter your name.." maxlength="10"/>
+    <button onclick="nickname()" id="buttonNick">Start</button>
+</div>
+<header>
+    <div class="header__left-side">
+        <button onclick="menuOpen()" id="ham1" class="hamburger-button"><img src="Images/hamburger-meny.png" alt="img"/></button>
+        <button onclick="menuClose() "id="ham2" class="hamburger-button"><img src="Images/hamburger-meny.png" alt="img"/></button>
+        <p id="nickname" class="logo-name">ToDo</p>
+        <input id="input-serach" type="search" placeholder="Search..."/>
+        <img class="img1" src="Images/serach-logo.png" alt="img"/>
+    </div>
+    <div class="header__right-side"></div>
+</header>
+
+<nav id="nav">
+    <button onclick="navButton1()" class="nav-button1"><img class="navImg" src="Images/sun.png" alt="img"/> <span id="span1">MY DAY</span></button>
+    <button onclick="navButton2()" class="nav-button2"><img class="navImg" src="Images/star.png" alt="img"/> <span id="span2">IMPORTANT</span></button>
+    <button onclick="navButton3()" class="nav-button3"><img class="navImg" src="Images/calendar.png" alt="img"/> <span id="span3">PLANNED</span></button>
+    <button onclick="navButton4()" class="nav-button4"><img class="navImg" src="Images/corect.png" alt="img"/> <span id="span4">TASKS</span></button>
+    <div class="rest-buttons">
+
+    </div>
+    <button class="nav-button5">&#8853; <span id="span5">NEW</span></button>
+</nav>
+
+<section id="main">
+    <div id="main1">
+        <p class="nameSec">My Day</p>
+        <div id="addTasks">
+
+        </div>
+        <div id="doneTask">
+
+        </div>
+        <div class="add">
+            <button id="addButton" onclick="add(0)" class="addTask">&#8853;</button>
+            <input id="addInput" type="text" onfocus="this.value=''" placeholder="Add a Task"/>
+        </div>
+    </div>
+
+    <div id="main2">
+        <p class="nameSec">Important</p>
+        <div id="addTasks1">
+
+        </div>
+        <div class="add">
+            <button id="addButton1" onclick="add(1)" class="addTask">&#8853;</button>
+            <input id="addInput1" type="text" onfocus="this.value=''" placeholder="Add a Task"/>
+        </div>
+    </div>
+
+    <div id="main3">
+        <p class="nameSec">Planned</p>
+        <div id="addTasks2">
+
+        </div>
+        <div class="add">
+            <button id="addButton2" onclick="add(2)" class="addTask">&#8853;</button>
+            <input id="addInput2" type="text" onfocus="this.value=''" placeholder="Add a Task"/>
+        </div>
+    </div>
+
+    <div id="main4">
+        <p class="nameSec">Tasks</p>
+        <div id="addTasks3">
+
+        </div>
+        <div class="add">
+            <button id="addButton3" onclick="add(3)" class="addTask">&#8853;</button>
+            <input id="addInput3" type="text" onfocus="this.value=''" placeholder="Add a Task"/>
+        </div>
+    </div>
+</section>
+
+<aside>
+    <div id="date"></div>
+    <div class="time">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span id="session">AM</span>
+    </div>
+</aside>
+</body>
