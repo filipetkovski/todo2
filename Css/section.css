@@ -74,8 +74,8 @@ section {
     font-weight: bold;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     section {
-        margin-right: 0;
+        margin-right: 10px;
     }
 }

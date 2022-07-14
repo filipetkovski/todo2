@@ -1,7 +1,8 @@
-const sec1 = document.getElementById("main1");
-const sec2 = document.getElementById("main2");
-const sec3 = document.getElementById("main3");
-const sec4 = document.getElementById("main4");
+let brDay = 1;
+let brImportant = 1;
+let brPlanned = 1;
+let brTasks = 1;
+
 
 //Add Task
 function add(n) {
@@ -9,7 +10,6 @@ function add(n) {
     const addInput1 = document.getElementById("addInput1");
     const addInput2 = document.getElementById("addInput2");
     const addInput3 = document.getElementById("addInput3");
-
     if(n === 0) {
         if(addInput.value !== '') {
             const text = addInput.value;
@@ -24,14 +24,14 @@ function add(n) {
         } else {
             addInput1.style.borderBottom = "1px solid white";
         }
-    } if (n === 2) {
+    } else if (n === 2) {
         if(addInput2.value !== '') {
             const text = addInput2.value;
-            addTasktoPlanned();
+            addTasktoPlanned(text);
         } else {
             addInput2.style.borderBottom = "1px solid white";
         }
-    } if (n === 3) {
+    } else if (n === 3) {
         if(addInput3.value !== '') {
             const text = addInput3.value;
             addTasktoTaks(text);
@@ -101,7 +101,7 @@ function addTasktoImportant(text) {
     let newTask = document.createElement("div");
     let newTime = document.createElement("div");
     const div = document.getElementById("addTasks1");
-    if(min < 10 && hours === 0) {
+    if((min < 10) && (hours === 0)) {
         newTime.innerText = "0" + hours + ":" + "0"+ min + " - " + year;
     } else if(min < 10) {
         newTime.innerText = hours + ":" + "0"+ min + " - " + year;
