@@ -23,7 +23,6 @@ section {
     align-items: center;
     border-radius: 10px;
     position:  sticky;
-    top: 91px;
     bottom: 10px;
     box-shadow: 2px 2px 10px black;
 }
