@@ -34,7 +34,6 @@ nav button {
     font-size: 1em;
     border: 0;
     width: 98%;
-    background-color: transparent;
     text-align: left;
     cursor: pointer;
     transition: 0.5s;
@@ -68,7 +67,6 @@ nav button:hover {
 .nav-button2, .nav-button4, .nav-button1, .nav-button3, .nav-button5  {
     padding-left: 22px;
 }
-
 #span5 {
     font-size: 0;
 }
@@ -80,7 +78,6 @@ nav button:hover {
     }
 
     nav button:hover {
-        background-color: transparent;
         color: black;
     }
 }
