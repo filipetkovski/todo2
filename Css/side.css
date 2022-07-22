@@ -4,8 +4,9 @@ aside {
     right: 0;
     bottom: 0;
     width: 500px;
+    border-left: 1px solid gray;
 
-    background-color: #e7e7e7;
+    background-color: #5b5b5b;
 }
 
 .time {

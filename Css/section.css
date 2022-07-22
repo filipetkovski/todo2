@@ -1,7 +1,7 @@
 section {
     margin-top: 71px;
     margin-right: 510px;
-    margin-left: 70px;
+    margin-bottom: 140px;
     position: relative;
 }
 
@@ -21,61 +21,70 @@ section {
     flex-direction: row;
     align-items: center;
     border-radius: 10px;
-    position:  sticky;
-    bottom: 10px;
     box-shadow: 2px 2px 10px black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.add input {
-    margin: 0 40px 0 0;
+.add input:nth-of-type(1) {
+    padding: 2px;
+    margin-left: 12px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.add input:nth-of-type(2) {
+    padding: 5px 0;
+    margin: 0 20px 0 0;
     background-color: firebrick;
     width: 100%;
-    color: white;
     outline: none;
+    color: white;
 }
 
 ::placeholder {
-    color: black;
-    padding-left: 5px;
-}
-
-.add ::placeholder {
+    padding-left: 3px;
     color: white;
 }
 
 .addTask {
-    padding: 5px 20px;
+    color: black;
+    padding: 5px;
     background-color: firebrick;
     border: none;
     text-align: left;
     cursor: pointer;
     border-radius: 10px;
     transition: 0.5s;
-    color: white;
     font-size: 2em;
 }
 
-#addTasks, #addTasks1, #addTasks2, #addTasks3 {
-    margin-top: 10px;
-
-}
-
-.addTask span {
-    font-size: 1.2em;
-}
-
 .nameSec {
-    background-color: #f1f1f1;
+    background-color: transparent;
     z-index: 50;
     font-size: 1.8em;
-    color: #505050;
-    padding: 20px 10px;
+    padding: 20px 10px 10px 10px;
     margin: 0;
     font-weight: bold;
+    user-select: none;
+    color: white;
 }
 
 @media (max-width: 1000px) {
     section {
         margin-right: 10px;
+    }
+    #addTasks, #addTasks1, #addTasks2, #addTasks3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .addTask {
+        padding: 3px;
+        font-size: 1.5em;
     }
 }

@@ -1,7 +1,11 @@
 body {
-    background-color: #f1f1f1;
+    background-color: #505050;
     font-family: Arial, sans-serif;
     position: relative;
+    /*background-image: url(../Images/wallpaper1.png);
+    background-size: 800px;
+    background-repeat: repeat;
+    background-attachment: fixed;*/
 }
 
 button {
