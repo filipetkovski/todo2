@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="Css/section.css">
     <link rel="stylesheet" href="Css/side.css">
     <link rel="stylesheet" href="Css/mainForJS.css">
+    <link rel="stylesheet" href="Css/calculator.css">
 
     <script src="JavaScript/nav-menu.js"></script>
     <!--<script src="JavaScript/nicknameCopy.js"></script>-->
     <script src="JavaScript/todoJS.js"></script>
     <script src="JavaScript/daySesion.js"></script>
-    <script src="JavaScript/importantSesion.js"></script>
-    <script src="JavaScript/plannedSesion.js"></script>
-    <script src="JavaScript/tasksSesion.js"></script>
 </head>
 <body>
 <div id="none">
@@ -39,14 +37,10 @@
 
 <nav id="nav">
     <div id="darkTheme"></div>
-    <button onclick="navButton(0)" id="nav1" class="nav-button"><img draggable="false" class="navImg" src="Images/sun.png" alt="img"/> TODAY</button>
-    <button onclick="navButton(1)" id="nav2" class="nav-button"><img draggable="false"  class="navImg" src="Images/star.png" alt="img"/> IMPORTANT</button>
-    <button onclick="navButton(2)" id="nav3" class="nav-button"><img draggable="false"  class="navImg" src="Images/calendar.png" alt="img"/> PLANNED</button>
-    <button onclick="navButton(3)" id="nav4" class="nav-button"><img draggable="false"  class="navImg" src="Images/corect.png" alt="img"/> TASKS</button>
-    <div class="rest-buttons">
-
-    </div>
-    <button class="nav-button" id="nav5"><img draggable="false"  class="navImg" src="Images/plus.png" alt="img"/> NEW</button>
+    <button onclick="navButton(0)" id="nav1" class="nav-button"><img draggable="false" class="navImg" src="Images/sun.png" alt="img"/> TASKS</button>
+    <button onclick="navButton(1)" id="nav2" class="nav-button"><img draggable="false"  class="navImg" src="Images/star.png" alt="img"/> GAMES</button>
+    <button onclick="navButton(2)" id="nav3" class="nav-button"><img draggable="false"  class="navImg" src="Images/calendar.png" alt="img"/> CALCULATOR</button>
+    <button onclick="navButton(3)" id="nav4" class="nav-button"><img draggable="false"  class="navImg" src="Images/corect.png" alt="img"/><a href="https://filipetkovski.github.io/">MyPAGE</a></button>
 </nav>
 
 <section id="main">
@@ -81,107 +75,18 @@
                 </div>-->
             <div id="completed" class="completed">Completed</div>
         </div>
-
     </div>
 
     <div id="main2">
-        <p class="nameSec">Important</p>
-        <div id="addTasks1">
-            <!-- <div class="taskBody">
-                 <div class="taskBody__left-side">
-                     <button class="taskBody__button"></button>
-                     <div class="taskBody__text"></div>
-                 </div>
-                 <div class="taskBody__right-side">
-                     <div class="taskBody__date"></div>
-                     <button class="taskBody__delete-button"></button>
-                 </div>
-             </div>-->
-        </div>
-        <div id="doneTask1" class="doneTask">
-            <!-- <div class="taskBody">
-                    <div class="taskBody__left-side">
-                        <button class="taskBody__button"></button>
-                        <div class="taskBody__text"></div>
-                    </div>
-                    <div class="taskBody__right-side">
-                        <div class="taskBody__date"></div>
-                        <button class="taskBody__delete-button" onclick="del()"></button>
-                    </div>
-                </div>-->
-            <div id="completed1" class="completed">Completed</div>
-        </div>
-        <form id="form1" class="add">
-            <input type="submit" id="addButton1" class="addTask" value="&#8853"/>
-            <input id="addInput1" type="text" maxlength="15"  onfocus="this.value=''" placeholder="Add a Task"/>
-        </form>
+        <p class="nameSec">Games</p>
+
     </div>
 
     <div id="main3">
-        <p class="nameSec">Planned</p>
-        <div id="addTasks2">
-            <!-- <div class="taskBody">
-                 <div class="taskBody__left-side">
-                     <button class="taskBody__button"></button>
-                     <div class="taskBody__text"></div>
-                 </div>
-                 <div class="taskBody__right-side">
-                     <div class="taskBody__date"></div>
-                     <button class="taskBody__delete-button"></button>
-                 </div>
-             </div>-->
-        </div>
-        <div id="doneTask2" class="doneTask">
-            <!-- <div class="taskBody">
-                    <div class="taskBody__left-side">
-                        <button class="taskBody__button"></button>
-                        <div class="taskBody__text"></div>
-                    </div>
-                    <div class="taskBody__right-side">
-                        <div class="taskBody__date"></div>
-                        <button class="taskBody__delete-button" onclick="del()"></button>
-                    </div>
-                </div>-->
-            <div id="completed2" class="completed">Completed</div>
-        </div>
-        <form id="form2" class="add">
-            <input type="submit" id="addButton2" class="addTask" value="&#8853"/>
-            <input id="addInput2" type="text" maxlength="15"  onfocus="this.value=''" placeholder="Add a Task"/>
-        </form>
+        <p class="nameSec">Calculator</p>
+
     </div>
 
-    <div id="main4">
-        <p class="nameSec">Tasks</p>
-        <div id="addTasks3">
-            <!-- <div class="taskBody">
-                 <div class="taskBody__left-side">
-                     <button class="taskBody__button"></button>
-                     <div class="taskBody__text"></div>
-                 </div>
-                 <div class="taskBody__right-side">
-                     <div class="taskBody__date"></div>
-                     <button class="taskBody__delete-button"></button>
-                 </div>
-             </div>-->
-        </div>
-        <div id="doneTask3" class="doneTask">
-            <!-- <div class="taskBody">
-                    <div class="taskBody__left-side">
-                        <button class="taskBody__button"></button>
-                        <div class="taskBody__text"></div>
-                    </div>
-                    <div class="taskBody__right-side">
-                        <div class="taskBody__date"></div>
-                        <button class="taskBody__delete-button" onclick="del()"></button>
-                    </div>
-                </div>-->
-            <div id="completed3" class="completed">Completed</div>
-        </div>
-        <form id="form3" class="add">
-            <input type="submit" id="addButton3" class="addTask" value="&#8853"/>
-            <input id="addInput3" type="text" maxlength="15"  onfocus="this.value=''" placeholder="Add a Task"/>
-        </form>
-    </div>
 </section>
 
 <aside>
